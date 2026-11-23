@@ -65,6 +65,7 @@ a { color: inherit; }
 .shape--triangle { background: var(--yellow); clip-path: polygon(50% 0, 100% 100%, 0 100%); }
 
 .shape--diamond { background: var(--blue); transform: rotate(45deg) scale(0.8); }
+.shape--ring { border: 0.17em solid var(--red); border-radius: 50%; }
 .shape--half { background: var(--ink); height: 0.36em; border-radius: 1em 1em 0 0; }
 .shape--bar { background: var(--ink); height: 0.2em; width: 0.8em; transform: rotate(-45deg); }
 
@@ -398,6 +399,62 @@ h2 {
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.03em;
+}
+
+/* ---------- worked with ---------- */
+
+.brands {
+  padding: clamp(3.5rem, 9vw, 8rem) var(--gutter);
+  border-top: var(--rule) solid var(--ink);
+}
+/* the rules between the plates are the grid's own black showing through the gaps */
+.brands__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--rule);
+  list-style: none;
+  margin: 0;
+  padding: var(--rule);
+  background: var(--ink);
+}
+.brand {
+  display: flex;
+  min-height: clamp(9rem, 17vw, 13rem);
+  background: var(--paper);
+}
+/* logo in the middle of the plate, name along the bottom */
+.brand__plate {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: clamp(0.9rem, 2vw, 1.5rem);
+  text-decoration: none;
+}
+.brand__plate img {
+  display: block;
+  width: auto;
+  max-width: 78%;
+  height: clamp(2rem, 4vw, 3.25rem);
+  margin: auto 0;
+  object-fit: contain;
+  object-position: left center;
+}
+/* round marks need more height than wordmarks to carry the same weight */
+.brand__plate img.brand__mark { height: clamp(3.25rem, 6.5vw, 5rem); }
+.brand__name { font-weight: 500; line-height: 1.1; }
+.brand__name--big {
+  margin-top: auto;
+  font-size: clamp(1.5rem, 2.8vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+a.brand__plate { transition: background-color 0.15s; }
+a.brand__plate:hover,
+a.brand__plate:focus-visible { background: var(--yellow); }
+@media (max-width: 760px) {
+  .brands__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 /* ---------- experience ---------- */

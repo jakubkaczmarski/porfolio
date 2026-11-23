@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=28">
+  <link rel="stylesheet" href="style.css?v=31">
 </head>
 <body>
   <script>document.documentElement.classList.add('js');</script>
@@ -400,6 +400,16 @@
       </ol>
     </section>
 
+    <section class="brands" id="brands">
+      <h2><span class="shape shape--ring" aria-hidden="true"></span>worked with</h2>
+      <ul class="brands__grid">
+        <li class="brand"><a class="brand__plate" href="https://sinolink.pl/" target="_blank" rel="noopener"><img class="brand__mark" src="assets/brands/sinolink.png" alt="" loading="lazy"><span class="brand__name">sinolink<span class="brand__go" aria-hidden="true"> ↗</span></span></a></li>
+        <li class="brand"><a class="brand__plate" href="https://www.stellos.com/" target="_blank" rel="noopener"><img src="assets/brands/stellos.svg" alt="" loading="lazy"><span class="brand__name">stellos<span class="brand__go" aria-hidden="true"> ↗</span></span></a></li>
+        <li class="brand"><a class="brand__plate" href="https://www.frst.vc/" target="_blank" rel="noopener"><img class="brand__mark" src="assets/brands/frst.svg" alt="" loading="lazy"><span class="brand__name">frst<span class="brand__go" aria-hidden="true"> ↗</span></span></a></li>
+        <li class="brand"><a class="brand__plate" href="https://propel.vc/" target="_blank" rel="noopener"><img src="assets/brands/propel.svg" alt="" loading="lazy"><span class="brand__name">propel<span class="brand__go" aria-hidden="true"> ↗</span></span></a></li>
+      </ul>
+    </section>
+
     <section class="experience" id="experience">
       <h2><span class="shape shape--half" aria-hidden="true"></span>experience</h2>
       <ol class="jobs">
@@ -572,7 +582,7 @@
     // motion: blocks rise in as they scroll into view, and the hero forms follow the pointer
     (function () {
       var still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      var blocks = document.querySelectorAll('h2, .work__sub, .field, .projects > li, .job, .about__lead, .about__side, .contact__lead, .contact__mail, .contact__links');
+      var blocks = document.querySelectorAll('h2, .work__sub, .field, .projects > li, .brand, .job, .about__lead, .about__side, .contact__lead, .contact__mail, .contact__links');
       blocks.forEach(function (el) {
         el.classList.add('reveal');
         var i = Array.prototype.indexOf.call(el.parentNode.children, el);
