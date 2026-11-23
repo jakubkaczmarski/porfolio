@@ -383,6 +383,8 @@ h2 {
 
 .project__year { font-variant-numeric: tabular-nums; }
 .project__title {
+  min-width: 0;
+  overflow-wrap: anywhere;
   font-size: clamp(1.5rem, 2.6vw, 2.25rem);
   font-weight: 700;
   line-height: 1.1;
