@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jakub kaczmarski</title>
+  <meta name="description" content="Jakub Kaczmarski builds AI solutions, apps, robots and websites. Co-founder of bluewall.tech, a software studio in Zurich. Projects, experience and contact.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jakub Kaczmarski">
+  <meta property="og:description" content="Jakub Kaczmarski builds AI solutions, apps, robots and websites. Co-founder of bluewall.tech, a software studio in Zurich. Projects, experience and contact.">
+  <meta property="og:url" content="https://kaczmarski.dev/">
+  <meta property="og:image" content="https://kaczmarski.dev/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://kaczmarski.dev/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=26">
+</head>
+<body>
+  <a class="skip" href="#work">skip to projects</a>
+
+  <header class="top">
+    <a class="top__name" href="#home">jakub kaczmarski</a>
+    <nav class="top__nav" aria-label="Sections">
+      <a href="#fields"><span class="shape shape--bar" aria-hidden="true"></span>what i do</a>
+      <a href="#work"><span class="shape shape--circle" aria-hidden="true"></span>projects</a>
+      <a href="#experience"><span class="shape shape--half" aria-hidden="true"></span>experience</a>
+      <a href="#hackathons"><span class="shape shape--diamond" aria-hidden="true"></span>hackathons</a>
+      <a href="#about"><span class="shape shape--square" aria-hidden="true"></span>about</a>
+      <a href="#contact"><span class="shape shape--triangle" aria-hidden="true"></span>contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero__text">
+        <h1>jakub<br>kaczmarski</h1>
+        <!-- EDIT: your one-line introduction -->
+        <p class="hero__intro">i build ai solutions, apps, robots and websites.</p>
+      </div>
+
+      <!-- Each shape is a link: circle = work, square = about, triangle = contact -->
+      <svg class="hero__art" viewBox="0 0 600 600" role="group" aria-label="Circle, square and triangle. Each one leads to a section of the page.">
+        <line class="art-bar" x1="40" y1="560" x2="560" y2="40" />
+        <a href="#about" aria-label="about">
+          <rect class="art-square" x="50" y="210" width="290" height="290" />
+        </a>
+        <a href="#work" aria-label="current projects">
+          <circle class="art-circle" cx="375" cy="235" r="175" />
+        </a>
+        <a href="#contact" aria-label="contact">
+          <polygon class="art-triangle" points="290,570 570,570 430,330" />
+        </a>
+      </svg>
+    </section>
+
+    <section class="fields" id="fields">
+      <h2><span class="shape shape--bar" aria-hidden="true"></span>what i do</h2>
+
+      <!-- EDIT: the one-line descriptions under each field -->
+      <ul class="fields__grid">
+        <li class="field field--blue">
+          <svg class="field__glyph" width="96" height="96" viewBox="0 0 120 120" aria-hidden="true">
+            <line x1="26" y1="92" x2="60" y2="28" /><line x1="60" y1="28" x2="96" y2="80" /><line x1="26" y1="92" x2="96" y2="80" />
+            <circle class="solid" cx="26" cy="92" r="14" /><circle class="solid" cx="60" cy="28" r="14" /><circle class="solid" cx="96" cy="80" r="14" />
+          </svg>
+          <h3>ai solutions</h3>
+          <p>assistants, agents and automations that plug into the tools you already use.</p>
+        </li>
+        <li class="field field--red">
+          <svg class="field__glyph" width="96" height="96" viewBox="0 0 120 120" aria-hidden="true">
+            <rect x="34" y="10" width="52" height="100" />
+            <circle class="solid" cx="60" cy="92" r="7" />
+            <line x1="34" y1="76" x2="86" y2="76" />
+          </svg>
+          <h3>app development</h3>
+          <p>ios and android apps, from the first prototype to the store.</p>
+        </li>
+        <li class="field field--yellow">
+          <svg class="field__glyph" width="96" height="96" viewBox="0 0 120 120" aria-hidden="true">
+            <line x1="60" y1="10" x2="60" y2="36" /><circle class="solid" cx="60" cy="12" r="7" />
+            <rect x="18" y="36" width="84" height="72" />
+            <circle class="solid" cx="43" cy="68" r="10" /><circle class="solid" cx="77" cy="68" r="10" />
+          </svg>
+          <h3>robotics</h3>
+          <p>software for machines that move: control, perception and the hardware in between.</p>
+        </li>
+        <li class="field field--black">
+          <svg class="field__glyph" width="96" height="96" viewBox="0 0 120 120" aria-hidden="true">
+            <rect x="10" y="20" width="100" height="80" />
+            <line x1="10" y1="42" x2="110" y2="42" />
+            <circle class="solid" cx="24" cy="31" r="5" />
+            <polygon class="solid" points="36,88 60,54 84,88" />
+          </svg>
+          <h3>web development</h3>
+          <p>fast, accessible websites and web apps.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="work" id="work">
+      <h2><span class="shape shape--circle" aria-hidden="true"></span>current projects</h2>
+      <ol class="projects">
+        <li>
+          <details class="project-item">
+            <summary class="project">
+              <span class="project__year">2026</span>
+              <span class="project__title">poetly</span>
+              <span class="project__desc">a poem a day to read or listen to, with each line lit up as it is read aloud.</span>
+              <span class="project__stack">app development</span>
+              <span class="project__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="project__panel">
+              <div class="project__about">
+                <p>poetly sends you one poem every morning. read it, or press listen and follow along as each line is highlighted while it is narrated.</p>
+                <ul>
+                  <li>paths: guided routes through the classics, one poem at a time, each with its story</li>
+                  <li>a world map and timeline of poets, by country and period</li>
+                  <li>poems in their original language next to english</li>
+                  <li>poems picked by mood, and a library of the ones you keep</li>
+                </ul>
+                <dl class="facts">
+                  <div><dt>my role</dt><dd>design, apps and backend</dd></div>
+                  <div><dt>built with</dt><dd>swiftui, kotlin and jetpack compose, go, elevenlabs</dd></div>
+                  <div><dt>runs on</dt><dd>iphone and android</dd></div>
+                </dl>
+              </div>
+              <div class="project__shots" tabindex="0" role="group" aria-label="poetly screenshots, scroll sideways for more">
+              <img src="assets/poetly/01-daily.jpg" width="644" height="1400" decoding="async" fetchpriority="low" alt="poetly: today screen with the poem of the day">
+              <img src="assets/poetly/07-paths.jpg" width="644" height="1400" decoding="async" fetchpriority="low" alt="poetly: the paths chart, a road of classic poems starting with sonnet 18">
+              <img src="assets/poetly/08-find-path.jpg" width="644" height="1400" decoding="async" fetchpriority="low" alt="poetly: a short question that picks a path for you">
+              <img src="assets/poetly/09-path-story.jpg" width="644" height="1400" decoding="async" fetchpriority="low" alt="poetly: the story behind sonnet 18 before you read it">
+              <img src="assets/poetly/02-listen.jpg" width="644" height="1400" decoding="async" fetchpriority="low" alt="poetly: a poem being read aloud with the current line highlighted">
+              <img src="assets/poetly/10-map.jpg" width="644" height="1400" decoding="async" fetchpriority="low" alt="poetly: map of europe with poets grouped by country">
+              <img src="assets/poetly/04-languages.jpg" width="644" height="1400" decoding="async" fetchpriority="low" alt="poetly: a poem in its original language and in english">
+              </div>
+            </div>
+          </details>
+        </li>
+        <li>
+          <details class="project-item">
+            <summary class="project">
+              <span class="project__year">2026</span>
+              <span class="project__title">learnrobotics.ai</span>
+              <span class="project__desc">learn robotics by building a robot, one part per chapter.</span>
+              <span class="project__stack">robotics</span>
+              <span class="project__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="project__panel">
+              <div class="project__about">
+                <p>pick a quadruped or a humanoid and work through the chapters. every chapter you pass installs a part on your 3d robot, so the robot itself shows how far you've come.</p>
+                <ul>
+                  <li>seven tracks, one per team in a robotics company: platform, hardware, firmware, bring-up, slam, autonomy, cloud and fleet</li>
+                  <li>step-by-step lessons with labs and check questions that explain every wrong answer</li>
+                  <li>a final systems check once all nine parts are on</li>
+                </ul>
+                <dl class="facts">
+                  <div><dt>my role</dt><dd>design, lessons and code</dd></div>
+                  <div><dt>built with</dt><dd>javascript, three.js, go</dd></div>
+                  <div><dt>runs on</dt><dd>the web</dd></div>
+                  <div><dt>live at</dt><dd><a href="https://learnrobotics.ai/">learnrobotics.ai</a></dd></div>
+                </dl>
+              </div>
+              <div class="project__shots project__shots--wide" tabindex="0" role="group" aria-label="learnrobotics.ai screenshots, scroll sideways for more">
+              <img src="assets/learnrobotics/1-intro.jpg" width="1600" height="1000" decoding="async" fetchpriority="low" alt="learnrobotics.ai: choosing between a quadruped and a humanoid robot">
+              <img src="assets/learnrobotics/5-robot.jpg" width="1600" height="1000" decoding="async" fetchpriority="low" alt="learnrobotics.ai: the 3d quadruped with five of nine parts installed">
+              <img src="assets/learnrobotics/3-tracks.jpg" width="1600" height="1000" decoding="async" fetchpriority="low" alt="learnrobotics.ai: the track map with lessons for each robotics team">
+              <img src="assets/learnrobotics/4-lesson.jpg" width="1600" height="1000" decoding="async" fetchpriority="low" alt="learnrobotics.ai: a lesson on the history of robotics with a step timeline">
+              </div>
+            </div>
+          </details>
+        </li>
+        <li>
+          <details class="project-item">
+            <summary class="project">
+              <span class="project__year">2026</span>
+              <span class="project__title">rentalbuddy.pl</span>
+              <span class="project__desc">be first to every new flat in kraków: it scans the listing sites and alerts you in minutes.</span>
+              <span class="project__stack">ai solutions</span>
+              <span class="project__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="project__panel">
+              <div class="project__about">
+                <p>good flats in kraków are gone in hours. rentalbuddy scans the rental sites around the clock, scores each flat against comparable ones and pings you before anyone else can call.</p>
+                <ul>
+                  <li>ai reads every listing and removes duplicates, agents, re-posts and bait prices</li>
+                  <li>search by travel time to your office or campus, on foot, by public transport or by car</li>
+                  <li>a map, price history and alerts for every new match</li>
+                </ul>
+                <dl class="facts">
+                  <div><dt>my role</dt><dd>design, scraping, backend and frontend</dd></div>
+                  <div><dt>built with</dt><dd>python and fastapi, react, leaflet, react native</dd></div>
+                  <div><dt>live at</dt><dd><a href="https://rentalbuddy.pl/">rentalbuddy.pl</a></dd></div>
+                </dl>
+              </div>
+              <div class="project__shots project__shots--wide" tabindex="0" role="group" aria-label="rentalbuddy screenshots, scroll sideways for more">
+                <img src="assets/rentalbuddy/1-hero.jpg" width="1600" height="1000" decoding="async" fetchpriority="low" alt="rentalbuddy: home page with a new flat listing on a phone">
+                <img src="assets/rentalbuddy/4-app-grid.jpg" width="1600" height="1000" decoding="async" fetchpriority="low" alt="rentalbuddy: the web app with flats ranked by deal score and filters on the left">
+                <img src="assets/rentalbuddy/5-app-detail.jpg" width="1600" height="1000" decoding="async" fetchpriority="low" alt="rentalbuddy: a flat's detail view with photos, rent, area and price per square metre">
+                <img src="assets/rentalbuddy/2-ai.jpg" width="1600" height="1000" decoding="async" fetchpriority="low" alt="rentalbuddy: ai filtering out duplicate and fake listings">
+                <img src="assets/rentalbuddy/3-commute.jpg" width="1600" height="1000" decoding="async" fetchpriority="low" alt="rentalbuddy: searching flats by travel time on a map of kraków">
+              </div>
+            </div>
+          </details>
+        </li>
+      </ol>
+
+      <h3 class="work__sub">maintained projects</h3>
+      <ol class="projects">
+        <li>
+          <details class="project-item">
+            <summary class="project">
+              <span class="project__year">2025</span>
+              <span class="project__title">mobizgrada.com</span>
+              <span class="project__desc">three connected apps for building managers, used in 600 apartment buildings in serbia.</span>
+              <span class="project__stack">app development</span>
+              <span class="project__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="project__panel">
+              <div class="project__about">
+                <p>a resident app, a manager control panel and ticket software in one system. the largest apartment manager in serbia runs 600 buildings on it.</p>
+                <ul>
+                  <li>residents report faults, follow their status, vote in polls and read notices on their phone</li>
+                  <li>managers see every building, resident, announcement and poll on one screen</li>
+                  <li>bank statements are imported automatically and shown to residents</li>
+                </ul>
+                <dl class="facts">
+                  <div><dt>status</dt><dd>built in 2025, maintained since</dd></div>
+                  <div><dt>used in</dt><dd>600 apartment buildings in serbia</dd></div>
+                  <div><dt>runs on</dt><dd>iphone, android and the web</dd></div>
+                  <div><dt>live at</dt><dd><a href="https://mobizgrada.com/en/">mobizgrada.com</a></dd></div>
+                </dl>
+              </div>
+              <div class="project__shots project__shots--wide" tabindex="0" role="group" aria-label="mobi zgrada screenshots, scroll sideways for more">
+                <img src="assets/mobizgrada/1-home.jpg" width="1600" height="1000" decoding="async" fetchpriority="low" alt="mobi zgrada: home page showing the control panel and the resident app">
+                <img src="assets/mobizgrada/2-app.jpg" width="1600" height="1000" decoding="async" fetchpriority="low" alt="mobi zgrada: the resident app's report a problem screen">
+                <img src="assets/mobizgrada/3-admin.jpg" width="1600" height="1000" decoding="async" fetchpriority="low" alt="mobi zgrada: the mobi-admin control panel for building managers">
+              </div>
+            </div>
+          </details>
+        </li>
+        <li>
+          <details class="project-item">
+            <summary class="project">
+              <span class="project__year">2026</span>
+              <span class="project__title">water delivery app</span>
+              <span class="project__desc">runs a water dispenser delivery and service business: clients, filter changes, routes and billing.</span>
+              <span class="project__stack">web development</span>
+              <span class="project__toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="project__panel">
+              <div class="project__about">
+                <p>one web app for the office and the technicians on the road. it knows which dispenser needs a new filter and when, plans the week's routes and keeps the billing data in one place.</p>
+                <ul>
+                  <li>dashboard of overdue and upcoming filter changes across every client location</li>
+                  <li>weekly route planning on real roads, split between technicians</li>
+                  <li>map of all locations, colour-coded by how urgent the next visit is</li>
+                  <li>tablet and phone view for technicians: today's stops, one-tap navigation, confirm the visit and the next one is scheduled</li>
+                  <li>clients with several locations, invoice data and monthly settlement</li>
+                  <li>enquiries from the website tracked from first contact to closed</li>
+                </ul>
+                <p class="project__label">how it's used</p>
+                <ol>
+                  <li>the office keeps every client, location and dispenser in the app, with the date of the last filter change</li>
+                  <li>each week the app lists what is due and plans a route for every technician</li>
+                  <li>technicians follow the route on their phone and confirm each visit, which schedules the next change</li>
+                  <li>sales log enquiries from the website and phone and turn them into clients</li>
+                  <li>at the end of the month the office settles subscriptions and extra services from the visit history</li>
+                </ol>
+                <dl class="facts">
+                  <div><dt>status</dt><dd>in production, maintained</dd></div>
+                  <div><dt>built with</dt><dd>next.js, typescript, postgres</dd></div>
+                  <div><dt>runs on</dt><dd>the web: desktop, tablet and phone</dd></div>
+                </dl>
+              </div>
+              <div class="project__media">
+                <figure class="device-fig">
+                  <div class="device" role="img" aria-label="water delivery app on an ipad mini: the technician's routes for the week, the next stop with navigate and done buttons, and the service map">
+                    <div class="device__screen">
+                      <img src="assets/waterdelivery/ipad-1-home.jpg" width="985" height="1500" decoding="async" fetchpriority="low" alt="">
+                      <img src="assets/waterdelivery/ipad-2-stop.jpg" width="985" height="1500" decoding="async" fetchpriority="low" alt="">
+                      <img src="assets/waterdelivery/ipad-3-map.jpg" width="985" height="1500" decoding="async" fetchpriority="low" alt="">
+                    </div>
+                  </div>
+                  <figcaption>technician view on an ipad mini: the week's route, the next stop, the map</figcaption>
+                </figure>
+                <p class="project__label">admin panel on desktop</p>
+                <div class="project__shots project__shots--wide" tabindex="0" role="group" aria-label="water delivery app admin panel screenshots with sample data, scroll sideways for more">
+                  <img src="assets/waterdelivery/1-dashboard.jpg" width="1600" height="1000" decoding="async" fetchpriority="low" alt="water delivery app: admin dashboard listing overdue filter changes, with sample data">
+                  <img src="assets/waterdelivery/2-routes.jpg" width="1600" height="1000" decoding="async" fetchpriority="low" alt="water delivery app: weekly route planning on a map, split between technicians">
+                  <img src="assets/waterdelivery/3-map.jpg" width="1600" height="1000" decoding="async" fetchpriority="low" alt="water delivery app: map of client locations coloured by urgency">
+                  <img src="assets/waterdelivery/4-clients.jpg" width="1600" height="1000" decoding="async" fetchpriority="low" alt="water delivery app: client list with locations and next filter change dates">
+                </div>
+              </div>
+            </div>
+          </details>
+        </li>
+      </ol>
+    </section>
+
+    <section class="experience" id="experience">
+      <h2><span class="shape shape--half" aria-hidden="true"></span>experience</h2>
+      <ol class="jobs">
+        <li class="job">
+          <p class="job__dates">oct 2026 to now</p>
+          <div class="job__role">
+            <h3>co-founder</h3>
+            <p><a href="https://bluewall.tech/">bluewall.tech</a>, zurich</p>
+          </div>
+          <div class="job__desc">
+            <p>a software studio in zurich. we build websites, online shops, apps and business software for companies.</p>
+          </div>
+        </li>
+        <li class="job">
+          <p class="job__dates">mar 2024 to oct 2026</p>
+          <div class="job__role">
+            <h3>co-founder</h3>
+            <p>veck inc.</p>
+          </div>
+          <div class="job__desc">
+            <p>private market intelligence for vcs and go-to-market teams: startup signals months before the round is announced, across 15,000+ investors and 200k+ founders.</p>
+            <p class="job__flag"><a href="https://dealroom.co/news/165856-evertrace-buys-veck-in-fourth-deal-to-find-founders-before-they-launch/" target="_blank" rel="noopener">acquired by evertrace</a></p>
+          </div>
+          <details class="job__more">
+            <summary>see the product</summary>
+            <div class="project__shots project__shots--wide" tabindex="0" role="group" aria-label="veck screenshots, scroll sideways for more">
+              <img src="assets/veck/1-site.jpg" width="1600" height="1000" decoding="async" fetchpriority="low" alt="veck: the public site, databases show who raised, veck shows who's about to">
+              <img src="assets/veck/2-feed.jpg" width="1600" height="1000" decoding="async" fetchpriority="low" alt="veck: the signal feed of startups and founders with the investors following them">
+              <img src="assets/veck/3-trending.jpg" width="1600" height="1000" decoding="async" fetchpriority="low" alt="veck: startups gaining followers on x the fastest">
+              <img src="assets/veck/4-dashboard.jpg" width="1600" height="1000" decoding="async" fetchpriority="low" alt="veck: the dashboard with recommended funds and recent updates">
+            </div>
+          </details>
+        </li>
+        <li class="job">
+          <p class="job__dates">may 2023 to nov 2023</p>
+          <div class="job__role">
+            <h3>software engineer intern</h3>
+            <p>textshuttle, zurich</p>
+          </div>
+          <div class="job__desc">
+            <p>built and tested software for machine translation.</p>
+            <ul>
+              <li>rebuilt the document conversion services in python and docker on a faster, more reliable library</li>
+              <li>extended the api to translate text with mixed input languages</li>
+              <li>built translation interfaces in typescript and react</li>
+              <li>added support for several single sign-on connections per customer</li>
+            </ul>
+          </div>
+        </li>
+        <li class="job">
+          <p class="job__dates">education</p>
+          <div class="job__role">
+            <h3>42</h3>
+            <p>software engineering</p>
+          </div>
+          <div class="job__desc">
+            <p>finished the core curriculum at 42, a non-profit, tuition-free programming school founded in paris in 2013.</p>
+            <ul>
+              <li>you get in through the piscine: 26 days of coding on site, around 60 hours a week, with an exam every friday</li>
+              <li>there are no teachers and no classes. you learn by building projects, starting in c and moving on to c++, systems, networks and the web</li>
+              <li>every project is reviewed by other students, and you review theirs</li>
+              <li>the core is 100+ projects and has to be finished within two years, or you are out</li>
+            </ul>
+          </div>
+          <dl class="stats">
+            <div><dt>#3</dt><dd>most innovative educational institution in the world, ahead of stanford and mit (wuri 2026)</dd></div>
+            <div><dt>1 in 20</dt><dd>applicants make it through the logic tests and the piscine</dd></div>
+            <div><dt>2,000 h</dt><dd>of project work in the core curriculum, on a hard two-year deadline</dd></div>
+            <div><dt>100%</dt><dd>of 42 paris graduates hired after the core (2025)</dd></div>
+          </dl>
+        </li>
+      </ol>
+    </section>
+
+    <section class="experience hackathons" id="hackathons">
+      <h2><span class="shape shape--diamond" aria-hidden="true"></span>hackathons</h2>
+      <ol class="jobs">
+        <li class="job">
+          <p class="job__dates">oct 2026</p>
+          <div class="job__role">
+            <h3>build the arsenal</h3>
+            <p>by sales patriot</p>
+          </div>
+          <div class="job__desc">
+            <p>built the demo for a european tender platform. ai agents negotiate for you, and it connects you with other suppliers to close the tender.</p>
+          </div>
+          <details class="job__more">
+            <summary>see the demo</summary>
+            <div class="project__shots project__shots--wide" tabindex="0" role="group" aria-label="tender platform screenshots, scroll sideways for more">
+              <img src="assets/arsenal/1-tenders.jpg" width="1600" height="1000" decoding="async" fetchpriority="low" alt="tender platform: eu and polish defence tenders in one list, translated, each marked with whether you can supply it">
+              <img src="assets/arsenal/2-qualify.jpg" width="1600" height="1000" decoding="async" fetchpriority="low" alt="tender platform: a german military vehicle parts tender, checked against your capacity and found 320 sets short">
+              <img src="assets/arsenal/3-partners.jpg" width="1600" height="1000" decoding="async" fetchpriority="low" alt="tender platform: eu suppliers scored as partners to cover the missing quantity, next to a log of what the agents did">
+              <img src="assets/arsenal/4-deal.jpg" width="1600" height="1000" decoding="async" fetchpriority="low" alt="tender platform: a deal closed by the agents with no human in the loop, with quantity, price and delivery date">
+              <img src="assets/arsenal/5-documents.jpg" width="1600" height="1000" decoding="async" fetchpriority="low" alt="tender platform: the agreement documents and the certificates the tender requires, ready to review and sign">
+            </div>
+          </details>
+        </li>
+        <li class="job">
+          <p class="job__dates">sep 2025</p>
+          <div class="job__role">
+            <h3>starthack 2025</h3>
+            <p>ibm x st.galler kantonalbank challenge, st. gallen</p>
+          </div>
+          <div class="job__desc">
+            <p>built galiant, an ai-powered finance assistant, in 36 hours with two friends. a react native app on top of a real user's two years of banking history.</p>
+            <ul>
+              <li>a budget balance worked out from your income and fixed costs</li>
+              <li>spending trends, and transactions filtered by trip, country and category</li>
+              <li>banking product suggestions based on how you use your account</li>
+              <li>a chat that knows your finances</li>
+            </ul>
+            <p class="job__flag">winner of the case</p>
+          </div>
+          <details class="job__more">
+            <summary>see the app</summary>
+            <video class="job__video" controls muted playsinline preload="none" width="720" height="1564" poster="assets/galiant/poster.jpg" aria-label="galiant: a screen recording of the app">
+              <source src="assets/galiant/demo.mp4" type="video/mp4">
+            </video>
+            <p class="job__credit"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7375611385768087552/">the post on linkedin</a></p>
+          </details>
+        </li>
+        <li class="job">
+          <p class="job__dates">sep 2023</p>
+          <div class="job__role">
+            <h3>hackzurich 2023</h3>
+            <p>zurich</p>
+          </div>
+          <div class="job__desc">
+            <p>worked on <a href="https://phrase.ly">phrase.ly</a>, a plug-in that brings generative ai tools such as chatgpt and dall-e to anywhere on your desktop.</p>
+            <p class="job__flag">finalist</p>
+          </div>
+          <details class="job__more">
+            <summary>see the video</summary>
+            <iframe class="job__embed" src="https://www.youtube-nocookie.com/embed/MpJtgCAhnW0" title="phrase.ly (hack zurich 2023 project)" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </details>
+        </li>
+      </ol>
+    </section>
+
+    <section class="about" id="about">
+      <h2><span class="shape shape--square" aria-hidden="true"></span>about</h2>
+      <div class="about__grid">
+        <p class="about__lead">i work where software meets the physical world: ai, apps, robots and the web.</p>
+        <div class="about__side">
+          <p>i co-founded veck, a private market intelligence platform that was acquired by evertrace in 2026. now i run bluewall.tech, a software studio in zurich, and build my own products on the side.</p>
+          <dl class="facts">
+            <div><dt>based in</dt><dd>kraków</dd></div>
+            <div><dt>works on</dt><dd>ai, apps, robots, web</dd></div>
+            <div><dt>open to</dt><dd>new client projects</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2><span class="shape shape--triangle" aria-hidden="true"></span>contact</h2>
+      <p class="contact__lead">have a project in mind? write to me.</p>
+      <a class="contact__mail" href="mailto:jakub@bluewall.tech">jakub@bluewall.tech</a>
+      <ul class="contact__links">
+        <li><a href="https://bluewall.tech/">bluewall.tech</a></li>
+        <li><a href="https://github.com/jakubkaczmarski">github</a></li>
+        <li><a href="https://www.linkedin.com/in/jakub-kaczmarski-/">linkedin</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>© 2026 jakub kaczmarski</span>
+    <a href="#home">back to top</a>
+  </footer>
+  <script>
+    // screenshots load in the background; until one arrives its box pulses
+    document.querySelectorAll('.project__shots img, .device img').forEach(function (img) {
+      if (img.complete) return;
+      img.classList.add('is-loading');
+      function done() { img.classList.remove('is-loading'); }
+      img.addEventListener('load', done);
+      img.addEventListener('error', done);
+    });
+  </script>
+</body>
+</html>
