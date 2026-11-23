@@ -1,6 +1,6 @@
 # portfolio
 
-Personal site of Jakub Kaczmarski: [kaczmarski.dev](https://kaczmarski.dev/).
+Personal site of Jakub Kaczmarski: [jakubkaczmarski.github.io/porfolio](https://jakubkaczmarski.github.io/porfolio/).
 
 A single static page with no build step: projects, experience, hackathons, about and contact.
 
@@ -24,4 +24,4 @@ Then open http://localhost:4173.
 
 - After changing `style.css`, raise the version number in the stylesheet link in `index.html` (`style.css?v=…`) so browsers load the new file.
 - Landscape screenshots are 1600×1000 JPEGs.
-- The link preview tags in `index.html` use full `https://kaczmarski.dev/` addresses. Change them if the site moves.
+- The link preview tags in `index.html` use full `https://jakubkaczmarski.github.io/porfolio/` addresses. Change them if the site moves.
