@@ -432,8 +432,9 @@ h2 {
 
 /* ---------- worked with ---------- */
 
+/* no space under the strip: the next section's top rule closes it */
 .brands {
-  padding: clamp(3.5rem, 9vw, 8rem) var(--gutter);
+  padding: clamp(3.5rem, 9vw, 8rem) var(--gutter) 0;
   border-top: var(--rule) solid var(--ink);
 }
 /* a full-width strip of logos that runs left to right */
@@ -441,7 +442,6 @@ h2 {
   overflow: hidden;
   margin: 0 calc(-1 * var(--gutter));
   border-top: var(--rule) solid var(--ink);
-  border-bottom: var(--rule) solid var(--ink);
 }
 .brands__track { display: flex; }
 .brands__list {
@@ -689,11 +689,25 @@ h2 {
     align-items: start;
     min-height: 0;
   }
-  .hero__art { order: -1; max-height: 52svh; }
+  /* stacked: keep the arriving forms inside their box so they don't cross the name */
+  .hero__art { order: -1; max-height: 52svh; overflow: hidden; }
   .project__panel { grid-template-columns: minmax(0, 1fr); }
   .project__about p,
   .project__about ul,
   .project__about ol { max-width: 60ch; }
+}
+
+/* ---------- phones ----------
+   after the tablet rules so these win: the forms shrink so the name, the proof line
+   and the buttons all fit on the first screen */
+
+@media (max-width: 760px) {
+  .top { padding: 0.9rem var(--gutter); gap: 0.35rem 2rem; }
+  .top__nav { gap: 0.2rem 1.1rem; font-size: 1rem; }
+  .hero { gap: 1.25rem; }
+  .hero__art { max-height: 30svh; }
+  .hero__proof { max-width: none; }
+  .btn { padding: 0.6rem 1.1rem; }
 }
 
 /* ---------- motion ----------
