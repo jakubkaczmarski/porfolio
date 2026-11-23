@@ -18,9 +18,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=27">
+  <link rel="stylesheet" href="style.css?v=28">
 </head>
 <body>
+  <script>document.documentElement.classList.add('js');</script>
   <a class="skip" href="#work">skip to projects</a>
 
   <header class="top">
@@ -455,14 +456,8 @@
             <p>software engineering</p>
           </div>
           <div class="job__desc">
-            <p>finished the core curriculum at 42, a non-profit, tuition-free programming school founded in paris in 2013.</p>
+            <p>finished the core curriculum at 42, a tuition-free programming school with no teachers and no classes. you learn by building 100+ projects, from c and c++ to systems, networks and the web, each one reviewed by other students.</p>
           </div>
-          <dl class="stats">
-            <div><dt>#3</dt><dd>most innovative educational institution in the world, ahead of stanford and mit (wuri 2026)</dd></div>
-            <div><dt>1 in 20</dt><dd>applicants make it through the logic tests and the piscine</dd></div>
-            <div><dt>2,000 h</dt><dd>of project work in the core curriculum, on a hard two-year deadline</dd></div>
-            <div><dt>100%</dt><dd>of 42 paris graduates hired after the core (2025)</dd></div>
-          </dl>
         </li>
       </ol>
     </section>
@@ -573,6 +568,45 @@
       img.addEventListener('load', done);
       img.addEventListener('error', done);
     });
+
+    // motion: blocks rise in as they scroll into view, and the hero forms follow the pointer
+    (function () {
+      var still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var blocks = document.querySelectorAll('h2, .work__sub, .field, .projects > li, .job, .about__lead, .about__side, .contact__lead, .contact__mail, .contact__links');
+      blocks.forEach(function (el) {
+        el.classList.add('reveal');
+        var i = Array.prototype.indexOf.call(el.parentNode.children, el);
+        el.style.setProperty('--i', Math.min(i, 5));
+      });
+
+      function show(el) {
+        el.classList.add('is-in');
+      }
+
+      if (!('IntersectionObserver' in window)) { blocks.forEach(show); return; }
+      var seen = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          show(entry.target);
+          seen.unobserve(entry.target);
+        });
+      }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+      blocks.forEach(function (el) { seen.observe(el); });
+
+      var hero = document.querySelector('.hero');
+      var art = document.querySelector('.hero__art');
+      if (!still && hero && art) {
+        hero.addEventListener('pointermove', function (e) {
+          var r = hero.getBoundingClientRect();
+          art.style.setProperty('--px', ((e.clientX - r.left) / r.width - 0.5).toFixed(3));
+          art.style.setProperty('--py', ((e.clientY - r.top) / r.height - 0.5).toFixed(3));
+        });
+        hero.addEventListener('pointerleave', function () {
+          art.style.setProperty('--px', 0);
+          art.style.setProperty('--py', 0);
+        });
+      }
+    })();
   </script>
 </body>
 </html>
